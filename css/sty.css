@@ -17,6 +17,8 @@
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    margin: 0px;
+    padding: 0px;
 }
 
 .meal-price{
@@ -36,4 +38,18 @@
     text-decoration: none;
     text-align: center;
 
+}
+.btn-1m{
+    background-color: red;
+    margin: 10% 10%;
+}
+.next-btn{
+    background-color: #d49cc3;
+}
+.ml-20{
+    background-color: #d49cc3;
+    margin: 5% 10%;
+}
+.red{
+    color: red;
 }
