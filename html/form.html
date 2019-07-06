@@ -15,7 +15,7 @@
     <img class="thumbnail" src="img/drug8_new.png" alt="" height="100%" width="100%">
 
 
-    <form action="">
+    <form action="" >
         <div class="form-group">
             <label>姓名：</label>
             <input id="name" type="text">
@@ -32,12 +32,67 @@
             <label class="label-textarea">邮寄地址：</label>
             <textarea id="address"></textarea>
         </div>
-        <p class="tip">请填写实名认证信息，以便领奖资料一经提交无法修改，请慎重填写！</p>
-        <div class="btn-group">
-            <button class="btn btn-md btn-purple" type="reset">取消</button>
-            <button class="btn btn-md btn-purple ml-20" id="submit" type="button">提交</button>
-        </div>
     </form>
+
+
+    <form id="userInfo">
+        <div class="info">
+            <label>姓名：</label>
+            <input type="text" name="fullname" >
+
+            <label>性别：</label>
+            <input type="text" name="fullname" >
+
+            <label>是否有身份证：</label>
+            <select name="idCard">
+                <option value="yes">是</option>
+                <option value="no">否</option>
+            </select>
+
+            <label>母亲身份证：</label>
+            <input type="text" name="fullname" >
+
+            <label>父亲身份证：</label>
+            <input type="text" name="fullname" >
+
+            <label>样本信息：</label>
+            <select name="info">
+                <option value="kqlm">口腔黏膜</option>
+                <option value="qdx">脐带血</option>
+            </select>
+        </div>
+
+
+        <div class="info2" id="info2">
+            <label>姓名：</label>
+            <input type="text" name="fullname" >
+
+            <label>性别：</label>
+            <input type="text" name="fullname" >
+
+            <label>是否有身份证：</label>
+            <select name="idCard">
+                <option value="yes">是</option>
+                <option value="no">否</option>
+            </select>
+
+            <label>样本信息：</label>
+            <select name="info">
+                <option value="kqlm">口腔黏膜</option>
+                <option value="qdx">脐带血</option>
+            </select>
+        </div>
+
+
+    </form>
+
+    <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">新增</button>
+
+    <p class="tip">请填写实名认证信息，以便领奖资料一经提交无法修改，请慎重填写！</p>
+    <div class="btn-group">
+        <button class="btn btn-md btn-purple" type="reset">取消</button>
+        <button class="btn btn-md btn-purple ml-20" id="submit" type="button">提交</button>
+    </div>
 
     <script>
         function isChinaName(name) {
@@ -126,7 +181,7 @@
     </div>
     <input type="checkbox" id="agree"/>我已阅读并同意<a href="./zhiqingshu.html">《知情同意书》</a>
 </div>
-
+<script src="../js/index.js"></script>
 </body>
 
 </html>
