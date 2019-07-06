@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <link rel="stylesheet" href="css/sty.css"/>
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <title>ATJN</title>
@@ -10,29 +11,43 @@
 <body>
 <div data-role="page" id="index">
     <div data-role="header">
-        <h1>ATJN</h1>
+        <div class="ui-btn-1m">
+            <h1 class="head-title">良药宝典</h1>
+        </div>
     </div>
+    <img class="thumbnail" src="img/drug8_new.png" alt="" height="100%" width="100%">
+
+
+
 
     <div data-role="main" class="ui-content">
-
-        <div data-role="collapsible" data-collapsed="false">
-            <h1>点击我 - 我可以折叠！</h1>
-            <p>我是可折叠的内容。</p>
+        <div>
+            <h3>良药套餐列表</h3>
+            <h4>个体化用药管理系统，具有核心技术的精准用药解决方案。</h4>
         </div>
-
+        选择套餐：
         <div data-role="collapsible" data-collapsed="false">
-            <h1>点击我 - 我可以折叠！</h1>
-            <p>我是可折叠的内容。</p>
+            <h1>药代酶检测套餐</h1>
+            <p>检测内容：CYP450家族2C9、2C19、2D6、3A4、3A5及VKORC1药代酶检测;通过药代酶检测，对已获得“国药准字”的约400种药物中应避免使用的药物进行提示标志。</p>
         </div>
-
         <div data-role="collapsible" data-collapsed="false">
-            <h1>点击我 - 我可以折叠！</h1>
-            <p>我是可折叠的内容。</p>
+            <h1>婴童常用药套餐</h1>
+            <p>检测内容：含有80种婴童常用药物，474种药品的个体筛查。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>全选套餐</h1>
+            <p>检测内容：含有400种常用药物，约2000余种药品的个体筛查。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="false">
+            <h1>家庭套餐</h1>
+            <p>“家庭套餐”是特别为有健康意识的家庭推出的优惠套餐，只需要2个人的价格即可检测3个人，尤其适合一家三口，保护全家人的安全用药，与“全选套餐”享受同等服务。<br>
+                检测内容：含有400种常用药物，约2000余种药品的个体筛查。
+            </p>
         </div>
 
 
         <p>欢迎! 点击以下链接跳转到第二个页面。 </p>
-        <a href="./html/userInfo.html">填写用户信息</a>
+        <a href="./html/form.html">填写用户信息</a>
     </div>
 
     <div data-role="footer" data-position="fixed">
