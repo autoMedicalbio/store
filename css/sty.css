@@ -18,3 +18,22 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
+.meal-price{
+    width: 50%;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.next-btn{
+    width: 48%;
+    float: right;
+    background: #0088bb;
+    color: #fff !important;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    text-align: center;
+
+}
