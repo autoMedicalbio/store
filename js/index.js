@@ -27,7 +27,7 @@ $(function () {
         if(!price ||  price == 0 ){
             alert("请先选择套餐~")
         }else
-            window.location.href ="./html/form.html"
+            window.location.href ="./form.html"
     })
     $("#addUserInfo").click(function () {
         $("#info2").append(template);
