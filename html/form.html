@@ -16,65 +16,68 @@
         </div>
     </div>
 
+    <div data-role="main" class="form">
+        <form action="" >
+            <p>为保证服务质量，请如实填写每一项信息</p>
+            <div class="form-group">
+                <label><span class="red">&nbsp;*&nbsp;</span>姓名：</label>
+                <input id="name" type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="red">&nbsp;*&nbsp;</span>联系电话：</label>
+                <input id="phone" type="text">
+            </div>
+            <div class="form-group">
+                <label><span class="red">&nbsp;*&nbsp;</span>身份证号：</label>
+                <input id="identity" type="text">
+            </div>
+            <div class="form-group">
+                <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>现居通信地址：</label>
+                <textarea id="address"></textarea>
+            </div>
+        </form>
+        <hr>
 
-    <form action="" >
-        <p>为保证服务质量，请如实填写每一项信息</p>
-        <div class="form-group">
-            <label><span class="red">&nbsp;*&nbsp;</span>姓名：</label>
-            <input id="name" type="text">
+        <form id="userInfo">
+            <div class="info">
+                <p>被检测人信息</p>
+                <label>姓名：</label>
+                <input type="text" name="fullname" >
+
+                <label>性别：</label>
+                <input type="text" name="fullname" >
+
+                <label><span class="red">&nbsp;*&nbsp;</span>是否有身份证：</label>
+                <select name="idCard">
+                    <option value="#">请选择</option>
+                    <option value="yes">是</option>
+                    <option value="no">否</option>
+                </select>
+
+                <label><span class="red">&nbsp;*&nbsp;</span>样本信息：</label>
+                <select name="info">
+                    <option value="#">请选择</option>
+                    <option value="kqlm">口腔黏膜</option>
+                    <option value="qdx">脐带血</option>
+                </select>
+            </div>
+
+
+        </form>
+
+        <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button><hr>
+
+        <form id="daima">
+            <div class="info">
+                <label><span class="red">&nbsp;*&nbsp;</span>顾问代码：</label>
+                <input type="text" name="daima" >
+            </div>
+
+        </form>
+        <div class="ui-btn-2m">
+            <input type="checkbox" id="agree"/>我已阅读并同意<a href="zhiqingshu.html">《知情同意书》</a>
         </div>
-        <div class="form-group">
-            <label><span class="red">&nbsp;*&nbsp;</span>联系电话：</label>
-            <input id="phone" type="text">
-        </div>
-        <div class="form-group">
-            <label><span class="red">&nbsp;*&nbsp;</span>身份证号：</label>
-            <input id="identity" type="text">
-        </div>
-        <div class="form-group">
-            <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>现居通信地址：</label>
-            <textarea id="address"></textarea>
-        </div>
-    </form>
-    <hr>
-
-    <form id="userInfo">
-        <div class="info">
-            <p>被检测人信息</p>
-            <label>姓名：</label>
-            <input type="text" name="fullname" >
-
-            <label>性别：</label>
-            <input type="text" name="fullname" >
-
-            <label><span class="red">&nbsp;*&nbsp;</span>是否有身份证：</label>
-            <select name="idCard">
-                <option value="#">请选择</option>
-                <option value="yes">是</option>
-                <option value="no">否</option>
-            </select>
-
-            <label><span class="red">&nbsp;*&nbsp;</span>样本信息：</label>
-            <select name="info">
-                <option value="#">请选择</option>
-                <option value="kqlm">口腔黏膜</option>
-                <option value="qdx">脐带血</option>
-            </select>
-        </div>
-
-
-    </form>
-
-    <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button><hr>
-
-    <form id="daima">
-        <div class="info">
-            <label><span class="red">&nbsp;*&nbsp;</span>顾问代码：</label>
-            <input type="text" name="daima" >
-        </div>
-        <input type="checkbox" id="agree"/>我已阅读并同意<a href="./zhiqingshu.html">《知情同意书》</a>
-    </form>
-
+    </div>
 
     <script>
         function isChinaName(name) {

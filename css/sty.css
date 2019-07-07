@@ -1,6 +1,4 @@
-.ui-btn-icon-left:after{
-    right:.5625em;
-}
+
 .ui-btn-1m{
     height: 54px;
     background: #d49cc3;
@@ -27,6 +25,7 @@
     height: 40px;
     line-height: 40px;
     text-align: center;
+    color: #86316c;
 }
 .next-btn{
     width: 48%;
@@ -37,19 +36,35 @@
     line-height: 40px;
     text-decoration: none;
     text-align: center;
-
+    font-weight: normal !important;
 }
 .btn-1m{
-    background-color: red;
+    background-color: #e9e9e9 !important;
     margin: 10% 10%;
 }
 .next-btn{
     background-color: #d49cc3;
 }
 .ml-20{
-    background-color: #d49cc3;
-    margin: 5% 10%;
+    background-color: #d49cc3 !important;
+    margin: 5% auto;
+    width: auto !important;
+    font-weight: normal !important;
+    color: #fff !important;
 }
 .red{
     color: red;
+}
+.form{
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    width: auto !important;
+}
+
+.ui-1m{
+    border: 1px solid #1b1b1b;
+    margin: 3%;
+    padding: 4%;
+    border-radius:7px;
 }
