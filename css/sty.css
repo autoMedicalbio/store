@@ -2,7 +2,6 @@
 .ui-btn-1m{
     height: 54px;
     background: #d49cc3;
-    position: relative;
     padding: 0 60px;
     font-family: 'STSong',华文宋体;
 
@@ -67,4 +66,11 @@
     margin: 3%;
     padding: 4%;
     border-radius:7px;
+}
+.ui-btn-icon-notext{
+    background: none !important;
+    margin-top: 6px !important;
+    margin-left: 10px !important;
+    border: none;
+
 }
