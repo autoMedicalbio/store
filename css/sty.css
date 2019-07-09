@@ -67,10 +67,19 @@
     padding: 4%;
     border-radius:7px;
 }
-.ui-btn-icon-notext{
-    background: none !important;
-    margin-top: 6px !important;
-    margin-left: 10px !important;
-    border: none;
+#agree{
+    margin:1px 1px 1px -35px !important;
 
+}
+.ui-btn-2m{
+    margin:1px 1px 1px 30px !important;
+}
+.ui-4m{
+    text-indent:32px;
+}
+.ui-3m{
+    text-align: center;
+}
+.ui-5m{
+    text-align: center;
 }

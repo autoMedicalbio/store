@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/sty.css"/>
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/jquery.mobile-1.4.5.min.js"></script>
-    <title>ATJN</title>
+    <title></title>
 </head>
 <body>
 <div data-role="page" id="index">
@@ -21,15 +21,251 @@
 
 
     <div data-role="main" class="ui-content">
+        <div>
+            <h3>良药套餐列表</h3>
+            <h4>个体化用药管理系统，具有核心技术的精准用药解决方案。</h4>
+        </div>
+        <!--选择套餐：-->
+        <!--<div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" >
+            <h1>药代酶检测套餐</h1>
+            <p>检测内容：CYP450家族2C9、2C19、2D6、3A4、3A5及VKORC1药代酶检测;通过药代酶检测，对已获得“国药准字”的约400种药物中应避免使用的药物进行提示标志。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 6700">
+            <h1>婴童常用药套餐</h1>
+            <p>检测内容：含有80种婴童常用药物，474种药品的个体筛查。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 13800">
+            <h1>全选套餐</h1>
+            <p>检测内容：含有400种常用药物，约2000余种药品的个体筛查。</p>
+        </div>
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 27600">
+            <h1>家庭套餐</h1>
+            <p>“家庭套餐”是特别为有健康意识的家庭推出的优惠套餐，只需要2个人的价格即可检测3个人，尤其适合一家三口，保护全家人的安全用药，与“全选套餐”享受同等服务。<br>
+                检测内容：含有400种常用药物，约2000余种药品的个体筛查。
+            </p>
+        </div>-->
+
+        <!--<div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" data-name="全项药物筛查（女）">
+            <h1>全项药物筛查（女）</h1>
+            &lt;!&ndash;<p>内容</p>&ndash;&gt;
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 1100" data-name="全项药物筛查（男）">
+            <h1>全项药物筛查（男）</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 500" data-name="婴童专用药筛查" >
+            <h1>婴童专用药筛查</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 1000" data-name="老年病用药筛查">
+            <h1>老年病用药筛查</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 2000" data-name="多类常用药筛查">
+            <h1>多类常用药筛查</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 300" data-name="三高类（血压血脂血糖）">
+            <h1>三高类（血压血脂血糖）</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 10" data-name="抗生素类">
+            <h1>抗生素类</h1>
+            <p>内容</p>
+        </div>
+
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4500" data-name="麻醉类">
+            <h1>麻醉类</h1>
+            <p>内容</p>
+        </div>-->
+
+
+        <form method="post" action="demoform.php">
+            <fieldset data-role="controlgroup">
+                <legend>请选择套餐：</legend>
+                <label for="female">全项药物筛查（女）</label>
+                <input type="checkbox" name="favcolor" id="female" value="10">
+                <label for="male">全项药物筛查（男）</label>
+                <input type="checkbox" name="favcolor" id="male" value="20">
+                <label for="baby">婴童专用药筛查</label>
+                <input type="checkbox" name="favcolor" id="baby" value="30">
+                <label for="age">老年病用药筛查</label>
+                <input type="checkbox" name="favcolor" id="age" value="40">
+                <label for="multi">多类常用药筛查</label>
+                <input type="checkbox" name="favcolor" id="multi" value="50">
+                <label for="high">三高类（血压血脂血糖）</label>
+                <input type="checkbox" name="favcolor" id="high" value="60">
+                <label for="antibiotic">抗生素类</label>
+                <input type="checkbox" name="favcolor" id="antibiotic" value="70">
+                <label for="anaesthesia">麻醉类</label>
+                <input type="checkbox" name="favcolor" id="anaesthesia" value="80">
+            </fieldset>
+            <!--<input type="submit" data-inline="true" value="提交">-->
+        </form>
+        </br>
+        <hr>
 
 
 
 
-        <a class="btn-1m" href="html/index2.html" data-role="button">套餐购买</a>
-        <a class="btn-1m" href="#" data-role="button">我的订单</a>
+        <div data-role="main" class="form">
+            <form action="" >
+                <h3>个人信息填写</h3>
+                <p>为保证服务质量，请如实填写每一项信息</p>
+                <div class="form-group">
+                    <label><span class="red">&nbsp;*&nbsp;</span>姓名：</label>
+                    <input id="name" type="text">
+                </div>
+                <div class="form-group">
+                    <label><span class="red">&nbsp;*&nbsp;</span>联系电话：</label>
+                    <input id="phone" type="text">
+                </div>
+                <div class="form-group">
+                    <label><span class="red">&nbsp;*&nbsp;</span>身份证号：</label>
+                    <input id="identity" type="text">
+                </div>
+                <div class="form-group">
+                    <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>邮寄地址：</label>
+                    <textarea id="address"></textarea>
+                </div>
+            </form>
+            <hr>
+
+            <form id="userInfo">
+                <div class="info">
+                    <p>被检测人信息</p>
+                    <label>姓名：</label>
+                    <input type="text" name="fullname" >
+
+                    <label>性别：</label>
+                    <input type="text" name="fullname" >
+
+                    <label><span class="red">&nbsp;*&nbsp;</span>是否有身份证：</label>
+                    <select name="idCard">
+                        <option value="#">请选择</option>
+                        <option value="yes">是</option>
+                        <option value="no">否</option>
+                    </select>
+
+                    <label><span class="red">&nbsp;*&nbsp;</span>样本信息：</label>
+                    <select name="info">
+                        <option value="#">请选择</option>
+                        <option value="kqlm">口腔黏膜</option>
+                        <option value="qdx">脐带血</option>
+                    </select>
+                </div>
+
+
+            </form>
+
+            <p id="tc-price"></p>
+
+            <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button><hr>
+
+            <div class="ui-btn-2m">
+                <input type="checkbox" id="agree"/>我已阅读并同意<a href="html/zhiqingshu.html">《知情同意书》</a>
+            </div>
+        </div>
+
+        <script>
+            function isChinaName(name) {
+                var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+                return pattern.test(name);
+            }
+
+            // 验证手机号
+            function isPhoneNo(phone) {
+                var pattern = /^1[34578]\d{9}$/;
+                return pattern.test(phone);
+            }
+
+            // 验证身份证
+            function isCardNo(card) {
+                var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+                return pattern.test(card);
+            }
+
+            // 验证函数
+            function formValidate() {
+                var str = '';
+
+                // 判断名称
+                if($.trim($('#name').val()).length == 0) {
+                    str += '名称没有输入\n';
+                    $('#name').focus();
+                } else {
+                    if(isChinaName($.trim($('#name').val())) == false) {
+                        str += '名称不合法\n';
+                        $('#name').focus();
+                    }
+                }
+
+                // 判断手机号码
+                if ($.trim($('#phone').val()).length == 0) {
+                    str += '手机号没有输入\n';
+                    $('#phone').focus();
+                } else {
+                    if(isPhoneNo($.trim($('#phone').val()) == false)) {
+                        str += '手机号码不正确\n';
+                        $('#phone').focus();
+                    }
+                }
+
+                // 验证身份证
+                if($.trim($('#identity').val()).length == 0) {
+                    str += '身份证号码没有输入\n';
+                    $('#identity').focus();
+                } else {
+                    if(isCardNo($.trim($('#identity').val())) == false) {
+                        str += '身份证号不正确；\n';
+                        $('#identity').focus();
+                    }
+                }
+
+                // 验证地址
+                if($.trim($('#address').val()).length == 0) {
+                    str += '地址没有输入\n';
+                    $('#address').focus();
+                }
+
+                // 如果没有错误则提交
+                if(str != '') {
+                    alert(str);
+                    return false;
+                } else {
+                    $('.auth-form').submit();
+                }
+            }
+
+            $('#submit').on('click', function() {
+                formValidate();
+            });
+
+        </script>
+
+
+        <div data-role="main" class="ui-content">
+
+        </div>
+
+
+
+
+
     </div>
 
+    <div data-role="footer" data-position="fixed">
+        <span class="meal-price"></span>
+        <span class="next-btn">提交订单</span>
+    </div>
 </div>
+<script src="js/index.js"></script>
 </body>
 
 </html>
