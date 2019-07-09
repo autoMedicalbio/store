@@ -16,11 +16,15 @@ $(function () {
         "                <option value=\"kqlm\">口腔黏膜</option>\n" +
         "                <option value=\"qdx\">脐带血</option>\n" +
         "            </select>"
-    var price  ;
+    var price  , name ;
     //良药套餐列表
     $(".meal .ui-collapsible-heading").on( "click", (function (e) {
         var el = $(e.currentTarget);
         price = el.parent(".meal").attr("data-meal");
+        name =  el.parent(".meal").attr("data-name");
+        var storage = {price:price,name:name}
+        localStorage.setItem("price",price);
+        localStorage.setItem("name",name);
         $(".meal-price").html(price);
     }))
     $(".next-btn").click(function () {
@@ -33,6 +37,11 @@ $(function () {
         $("#info2").append(template);
         $("#info2").trigger("create")
     })
+
+
+    name = name ? name : localStorage.getItem("name")
+    price = price ? price : localStorage.getItem("price")
+    $("#tc-price").html("已选套餐："+ name + "价格:" + price)
 
 
 })
