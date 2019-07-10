@@ -18,7 +18,7 @@ $(function () {
         "            </select>"
     var price  , name ;
     //良药套餐列表
-    $(".meal .ui-collapsible-heading").on( "click", (function (e) {
+        $(".meal .ui-collapsible-heading").on( "click", (function (e) {
         var el = $(e.currentTarget);
         price = el.parent(".meal").attr("data-meal");
         name =  el.parent(".meal").attr("data-name");
@@ -31,7 +31,7 @@ $(function () {
         if(!price ||  price == 0 ){
             alert("请先选择套餐~")
         }else
-            window.location.href ="./form.html"
+            window.location.href ="index.html"
     })
     $("#addUserInfo").click(function () {
         $("#info2").append(template);
@@ -44,4 +44,4 @@ $(function () {
     $("#tc-price").html("已选套餐："+ name + "价格:" + price)
 
 
-})
+});

@@ -45,9 +45,9 @@
             </p>
         </div>-->
 
-        <!--<div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" data-name="全项药物筛查（女）">
+        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" data-name="全项药物筛查（女）">
             <h1>全项药物筛查（女）</h1>
-            &lt;!&ndash;<p>内容</p>&ndash;&gt;
+            <p>内容</p>
         </div>
 
         <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 1100" data-name="全项药物筛查（男）">
@@ -83,14 +83,14 @@
         <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4500" data-name="麻醉类">
             <h1>麻醉类</h1>
             <p>内容</p>
-        </div>-->
+        </div>
 
 
         <form method="post" action="demoform.php">
             <fieldset data-role="controlgroup">
                 <legend>请选择套餐：</legend>
-                <label for="female">全项药物筛查（女）</label>
-                <input type="checkbox" name="favcolor" id="female" value="10">
+                <label for="meal">全项药物筛查（女）</label>
+                <input type="checkbox" name="favcolor" data-collapsed="true" id="meal" data-meal="¥ 4500" data-name="麻醉类">
                 <label for="male">全项药物筛查（男）</label>
                 <input type="checkbox" name="favcolor" id="male" value="20">
                 <label for="baby">婴童专用药筛查</label>
@@ -132,7 +132,7 @@
                 </div>
                 <div class="form-group">
                     <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>邮寄地址：</label>
-                    <textarea id="address"></textarea>
+                    <textarea type="text" name="a" id="a" onkeyup="document.getElementById('b').value=this.value" onblur="document.getElementById('b').value=this.value"></textarea>
                 </div>
             </form>
             <hr>
@@ -159,14 +159,16 @@
                         <option value="kqlm">口腔黏膜</option>
                         <option value="qdx">脐带血</option>
                     </select>
+                    <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>邮寄地址：</label>
+                    <textarea type="text" name="b" id="b"></textarea>
                 </div>
 
 
             </form>
 
-            <p id="tc-price"></p>
+            <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button>
 
-            <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button><hr>
+            <p id="tc-price"></p><hr>
 
             <div class="ui-btn-2m">
                 <input type="checkbox" id="agree"/>我已阅读并同意<a href="html/zhiqingshu.html">《知情同意书》</a>
