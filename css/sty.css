@@ -43,6 +43,7 @@
 }
 .next-btn{
     background-color: #d49cc3;
+    text-shadow:none;
 }
 .ml-20{
     background-color: #d49cc3 !important;
@@ -50,6 +51,7 @@
     width: auto !important;
     font-weight: normal !important;
     color: #fff !important;
+    text-shadow:none !important;
 }
 .red{
     color: red;
@@ -68,7 +70,7 @@
     border-radius:7px;
 }
 #agree{
-    margin:1px 1px 1px -35px !important;
+    margin:0px 1px 1px -35px !important;
 
 }
 .ui-btn-2m{
@@ -83,3 +85,6 @@
 .ui-5m{
     text-align: center;
 }
+
+
+
