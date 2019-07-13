@@ -25,86 +25,26 @@
             <h3>良药套餐列表</h3>
             <h4>个体化用药管理系统，具有核心技术的精准用药解决方案。</h4>
         </div>
-        <!--选择套餐：-->
-        <!--<div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" >
-            <h1>药代酶检测套餐</h1>
-            <p>检测内容：CYP450家族2C9、2C19、2D6、3A4、3A5及VKORC1药代酶检测;通过药代酶检测，对已获得“国药准字”的约400种药物中应避免使用的药物进行提示标志。</p>
-        </div>
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 6700">
-            <h1>婴童常用药套餐</h1>
-            <p>检测内容：含有80种婴童常用药物，474种药品的个体筛查。</p>
-        </div>
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 13800">
-            <h1>全选套餐</h1>
-            <p>检测内容：含有400种常用药物，约2000余种药品的个体筛查。</p>
-        </div>
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 27600">
-            <h1>家庭套餐</h1>
-            <p>“家庭套餐”是特别为有健康意识的家庭推出的优惠套餐，只需要2个人的价格即可检测3个人，尤其适合一家三口，保护全家人的安全用药，与“全选套餐”享受同等服务。<br>
-                检测内容：含有400种常用药物，约2000余种药品的个体筛查。
-            </p>
-        </div>-->
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4900" data-name="全项药物筛查（女）">
-            <h1>全项药物筛查（女）</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 1100" data-name="全项药物筛查（男）">
-            <h1>全项药物筛查（男）</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 500" data-name="婴童专用药筛查" >
-            <h1>婴童专用药筛查</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 1000" data-name="老年病用药筛查">
-            <h1>老年病用药筛查</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 2000" data-name="多类常用药筛查">
-            <h1>多类常用药筛查</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 300" data-name="三高类（血压血脂血糖）">
-            <h1>三高类（血压血脂血糖）</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 10" data-name="抗生素类">
-            <h1>抗生素类</h1>
-            <p>内容</p>
-        </div>
-
-        <div data-role="collapsible" data-collapsed="true" class="meal" data-meal="¥ 4500" data-name="麻醉类">
-            <h1>麻醉类</h1>
-            <p>内容</p>
-        </div>
-
 
         <form method="post" action="demoform.php">
             <fieldset data-role="controlgroup">
                 <legend>请选择套餐：</legend>
                 <label for="meal">全项药物筛查（女）</label>
-                <input type="checkbox" name="favcolor" data-collapsed="true" id="meal" data-meal="¥ 4500" data-name="麻醉类">
+                <input type="checkbox" name="favcolor" data-collapsed="true" value="500" id="meal" class="menu" data-name="麻醉类">
                 <label for="male">全项药物筛查（男）</label>
-                <input type="checkbox" name="favcolor" id="male" value="20">
+                <input type="checkbox" name="favcolor" id="male" value="500" class="menu"  data-name="麻醉类">
                 <label for="baby">婴童专用药筛查</label>
-                <input type="checkbox" name="favcolor" id="baby" value="30">
+                <input type="checkbox" name="favcolor" id="baby" value="30" class="menu"  data-name="麻醉类">
                 <label for="age">老年病用药筛查</label>
-                <input type="checkbox" name="favcolor" id="age" value="40">
+                <input type="checkbox" name="favcolor" id="age" value="40" class="menu"  data-name="麻醉类">
                 <label for="multi">多类常用药筛查</label>
-                <input type="checkbox" name="favcolor" id="multi" value="50">
+                <input type="checkbox" name="favcolor" id="multi" value="50" class="menu"  data-name="麻醉类">
                 <label for="high">三高类（血压血脂血糖）</label>
-                <input type="checkbox" name="favcolor" id="high" value="60">
+                <input type="checkbox" name="favcolor" id="high" value="60" class="menu"  data-name="麻醉类">
                 <label for="antibiotic">抗生素类</label>
-                <input type="checkbox" name="favcolor" id="antibiotic" value="70">
+                <input type="checkbox" name="favcolor" id="antibiotic" value="70" class="menu"  data-name="麻醉类">
                 <label for="anaesthesia">麻醉类</label>
-                <input type="checkbox" name="favcolor" id="anaesthesia" value="80">
+                <input type="checkbox" name="favcolor" id="anaesthesia" value="80" class="menu"  data-name="麻醉类">
             </fieldset>
             <!--<input type="submit" data-inline="true" value="提交">-->
         </form>

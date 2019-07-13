@@ -18,14 +18,18 @@ $(function () {
         "            </select>"
     var price  , name ;
     //良药套餐列表
-        $(".meal .ui-collapsible-heading").on( "click", (function (e) {
+    $(".menu").on( "click", (function (e) {
+        var total =Number($(".meal-price").html() ) ;
         var el = $(e.currentTarget);
-        price = el.parent(".meal").attr("data-meal");
-        name =  el.parent(".meal").attr("data-name");
-        var storage = {price:price,name:name}
-        localStorage.setItem("price",price);
-        localStorage.setItem("name",name);
-        $(".meal-price").html(price);
+        price = Number( el.val() );
+        name =  el.attr("data-name");
+        if(el.is(":checked")){
+           total += price;
+        }else{
+           total -= price;
+        }
+        total = total >0 ? total :0 ;
+        $(".meal-price").html(total);
     }))
     $(".next-btn").click(function () {
         if(!price ||  price == 0 ){
