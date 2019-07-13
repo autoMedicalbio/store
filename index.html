@@ -32,19 +32,19 @@
                 <label for="meal">全项药物筛查（女）</label>
                 <input type="checkbox" name="favcolor" data-collapsed="true" value="500" id="meal" class="menu" data-name="麻醉类">
                 <label for="male">全项药物筛查（男）</label>
-                <input type="checkbox" name="favcolor" id="male" value="500" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="male" value="500" class="menu"  data-name="麻醉类1">
                 <label for="baby">婴童专用药筛查</label>
-                <input type="checkbox" name="favcolor" id="baby" value="30" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="baby" value="30" class="menu"  data-name="2">
                 <label for="age">老年病用药筛查</label>
-                <input type="checkbox" name="favcolor" id="age" value="40" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="age" value="40" class="menu"  data-name="麻醉类666">
                 <label for="multi">多类常用药筛查</label>
-                <input type="checkbox" name="favcolor" id="multi" value="50" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="multi" value="50" class="menu"  data-name="麻醉类888">
                 <label for="high">三高类（血压血脂血糖）</label>
-                <input type="checkbox" name="favcolor" id="high" value="60" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="high" value="60" class="menu"  data-name="麻醉类999">
                 <label for="antibiotic">抗生素类</label>
-                <input type="checkbox" name="favcolor" id="antibiotic" value="70" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="antibiotic" value="70" class="menu"  data-name="麻醉类677">
                 <label for="anaesthesia">麻醉类</label>
-                <input type="checkbox" name="favcolor" id="anaesthesia" value="80" class="menu"  data-name="麻醉类">
+                <input type="checkbox" name="favcolor" id="anaesthesia" value="80" class="menu"  data-name="麻醉类8">
             </fieldset>
             <!--<input type="submit" data-inline="true" value="提交">-->
         </form>
@@ -81,28 +81,34 @@
                 <div class="info">
                     <p>被检测人信息</p>
                     <label>姓名：</label>
-                    <input type="text" name="fullname" >
+                    <input type="text" name="fullname" class="name">
 
                     <label>性别：</label>
-                    <input type="text" name="fullname" >
+                    <select name="sex" class="sex">
+                        <option value="#">请选择</option>
+                        <option value="0">男</option>
+                        <option value="1">女</option>
+                    </select>
 
                     <label><span class="red">&nbsp;*&nbsp;</span>是否有身份证：</label>
-                    <select name="idCard">
+                    <select name="idCard" class="idCard">
                         <option value="#">请选择</option>
                         <option value="yes">是</option>
                         <option value="no">否</option>
                     </select>
 
                     <label><span class="red">&nbsp;*&nbsp;</span>样本信息：</label>
-                    <select name="info">
+                    <select name="info" class="info">
                         <option value="#">请选择</option>
                         <option value="kqlm">口腔黏膜</option>
                         <option value="qdx">脐带血</option>
                     </select>
-                    <label class="label-textarea"><span class="red">&nbsp;*&nbsp;</span>邮寄地址：<span class="right"><input type="checkbox" id="agr"/>自定义邮寄地址</span></label>
-
-                    <textarea type="text" name="b" id="b"></textarea>
-
+                    <label class="label-textarea">
+                        <span class="red">&nbsp;*&nbsp;</span>
+                        邮寄地址：
+                        <span class="right"><input type="checkbox" class="addressInput"/>自定义邮寄地址</span>
+                    </label>
+                    <textarea type="text" name="textarea" class="address"></textarea>
                 </div>
 
 
@@ -110,93 +116,16 @@
 
             <button class="btn btn-md btn-purple ml-20" id="addUserInfo" type="button">添加检测人</button>
 
-            <p id="tc-price"></p><hr>
+            <h4>已选套餐</h4>
+            <div id="tc-price"></div>
+
+            <hr>
 
             <div class="ui-btn-2m">
                 <input type="checkbox" id="agree"/>我已阅读并同意<a href="html/zhiqingshu.html">《知情同意书》</a>
             </div>
         </div>
 
-        <script>
-            function isChinaName(name) {
-                var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
-                return pattern.test(name);
-            }
-
-            // 验证手机号
-            function isPhoneNo(phone) {
-                var pattern = /^1[34578]\d{9}$/;
-                return pattern.test(phone);
-            }
-
-            // 验证身份证
-            function isCardNo(card) {
-                var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
-                return pattern.test(card);
-            }
-
-            // 验证函数
-            function formValidate() {
-                var str = '';
-
-                // 判断名称
-                if($.trim($('#name').val()).length == 0) {
-                    str += '名称没有输入\n';
-                    $('#name').focus();
-                } else {
-                    if(isChinaName($.trim($('#name').val())) == false) {
-                        str += '名称不合法\n';
-                        $('#name').focus();
-                    }
-                }
-
-                // 判断手机号码
-                if ($.trim($('#phone').val()).length == 0) {
-                    str += '手机号没有输入\n';
-                    $('#phone').focus();
-                } else {
-                    if(isPhoneNo($.trim($('#phone').val()) == false)) {
-                        str += '手机号码不正确\n';
-                        $('#phone').focus();
-                    }
-                }
-
-                // 验证身份证
-                if($.trim($('#identity').val()).length == 0) {
-                    str += '身份证号码没有输入\n';
-                    $('#identity').focus();
-                } else {
-                    if(isCardNo($.trim($('#identity').val())) == false) {
-                        str += '身份证号不正确；\n';
-                        $('#identity').focus();
-                    }
-                }
-
-                // 验证地址
-                if($.trim($('#address').val()).length == 0) {
-                    str += '地址没有输入\n';
-                    $('#address').focus();
-                }
-
-                // 如果没有错误则提交
-                if(str != '') {
-                    alert(str);
-                    return false;
-                } else {
-                    $('.auth-form').submit();
-                }
-            }
-
-            $('#submit').on('click', function() {
-                formValidate();
-            });
-
-        </script>
-
-
-        <div data-role="main" class="ui-content">
-
-        </div>
 
 
 
@@ -209,7 +138,83 @@
         <span class="next-btn">提交订单</span>
     </div>
 </div>
+<script src="js/lodash.js"></script>
 <script src="js/index.js"></script>
+<script>
+    function isChinaName(name) {
+        var pattern = /^[\u4E00-\u9FA5]{1,6}$/;
+        return pattern.test(name);
+    }
+
+    // 验证手机号
+    function isPhoneNo(phone) {
+        var pattern = /^1[34578]\d{9}$/;
+        return pattern.test(phone);
+    }
+
+    // 验证身份证
+    function isCardNo(card) {
+        var pattern = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
+        return pattern.test(card);
+    }
+
+    // 验证函数
+    function formValidate() {
+        var str = '';
+
+        // 判断名称
+        if($.trim($('#name').val()).length == 0) {
+            str += '名称没有输入\n';
+            $('#name').focus();
+        } else {
+            if(isChinaName($.trim($('#name').val())) == false) {
+                str += '名称不合法\n';
+                $('#name').focus();
+            }
+        }
+
+        // 判断手机号码
+        if ($.trim($('#phone').val()).length == 0) {
+            str += '手机号没有输入\n';
+            $('#phone').focus();
+        } else {
+            if(isPhoneNo($.trim($('#phone').val()) == false)) {
+                str += '手机号码不正确\n';
+                $('#phone').focus();
+            }
+        }
+
+        // 验证身份证
+        if($.trim($('#identity').val()).length == 0) {
+            str += '身份证号码没有输入\n';
+            $('#identity').focus();
+        } else {
+            if(isCardNo($.trim($('#identity').val())) == false) {
+                str += '身份证号不正确；\n';
+                $('#identity').focus();
+            }
+        }
+
+        // 验证地址
+        if($.trim($('#address').val()).length == 0) {
+            str += '地址没有输入\n';
+            $('#address').focus();
+        }
+
+        // 如果没有错误则提交
+        if(str != '') {
+            alert(str);
+            return false;
+        } else {
+            $('.auth-form').submit();
+        }
+    }
+
+    $('#submit').on('click', function() {
+        formValidate();
+    });
+
+</script>
 </body>
 
 </html>
