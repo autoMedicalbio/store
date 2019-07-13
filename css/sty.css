@@ -86,6 +86,9 @@
 .ui-5m{
     text-align: center;
 }
-
+.right{
+    float:right;
+    margin:0px 1px 1px -50px !important;
+}
 
 

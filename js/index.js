@@ -37,7 +37,8 @@ $(function () {
         $("#info2").append(template);
         $("#info2").trigger("create")
     })
-
+    //只读
+    $("#b").prop("readonly",true)
 
     name = name ? name : localStorage.getItem("name")
     price = price ? price : localStorage.getItem("price")
