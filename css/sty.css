@@ -90,5 +90,24 @@
     float:right;
     margin:0px 1px 1px -50px !important;
 }
+.addressInput{
+    margin:0px 1px 1px -35px !important;
+}
+.ui-btn-6m{
+    height:25px;
+    line-height:25px;
+}
+.delInfo{
+    background-color: #d49cc3 !important;
+    margin: 5% auto;
+    width: auto !important;
+    font-weight: normal !important;
+    color: #fff !important;
+    text-shadow:none !important;
+    padding: 5px;
+    border-width: 1px;
+    float: right;
+}
+
 
 

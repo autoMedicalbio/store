@@ -1,6 +1,6 @@
 $(function () {
     var template = "<div class='info'>\n" +
-        "    <p>被检测人信息</p>\n" +
+        "    <h4>被检测人信息</h4>\n" +
         "    <label>姓名：</label>\n" +
         "    <input type='text' name='fullname' class='name'>\n" +
         "\n" +
@@ -24,11 +24,11 @@ $(function () {
         "        <option value='kqlm'>口腔黏膜</option>\n" +
         "        <option value='qdx'>脐带血</option>\n" +
         "    </select>\n" +
-        "    <label class='label-textarea'>\n" +
+        "    <div class='ui-btn-6m'>\n" +
         "        <span class='red'>&nbsp;*&nbsp;</span>\n" +
         "        邮寄地址：\n" +
-        "        <span class='right'><input type='checkbox' class='addressInput'/>自定义邮寄地址</span>\n" +
-        "    </label>\n" +
+        "        <span class=\"right\"><input type=\"checkbox\" class=\"addressInput\"/>自定义邮寄地址</span>\n" +
+        "    </div>\n" +
         "    <textarea type='text' name='textarea' class='address'></textarea>\n" +
         "   <a class='delInfo'>删除</a>"
         "</div>"

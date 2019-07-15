@@ -30,21 +30,21 @@
             <fieldset data-role="controlgroup">
                 <legend>请选择套餐：</legend>
                 <label for="meal">全项药物筛查（女）</label>
-                <input type="checkbox" name="favcolor" data-collapsed="true" value="500" id="meal" class="menu" data-name="麻醉类">
+                <input type="checkbox" name="favcolor" data-collapsed="true" value="2000" id="meal" class="menu" data-name="全项药物筛查（女）">
                 <label for="male">全项药物筛查（男）</label>
-                <input type="checkbox" name="favcolor" id="male" value="500" class="menu"  data-name="麻醉类1">
+                <input type="checkbox" name="favcolor" id="male" value="5000" class="menu"  data-name="全项药物筛查（男）">
                 <label for="baby">婴童专用药筛查</label>
-                <input type="checkbox" name="favcolor" id="baby" value="30" class="menu"  data-name="2">
+                <input type="checkbox" name="favcolor" id="baby" value="4000" class="menu"  data-name="婴童专用药筛查">
                 <label for="age">老年病用药筛查</label>
-                <input type="checkbox" name="favcolor" id="age" value="40" class="menu"  data-name="麻醉类666">
+                <input type="checkbox" name="favcolor" id="age" value="4000" class="menu"  data-name="老年病用药筛查">
                 <label for="multi">多类常用药筛查</label>
-                <input type="checkbox" name="favcolor" id="multi" value="50" class="menu"  data-name="麻醉类888">
+                <input type="checkbox" name="favcolor" id="multi" value="5000" class="menu"  data-name="多类常用药筛查">
                 <label for="high">三高类（血压血脂血糖）</label>
-                <input type="checkbox" name="favcolor" id="high" value="60" class="menu"  data-name="麻醉类999">
+                <input type="checkbox" name="favcolor" id="high" value="1000" class="menu"  data-name="三高类（血压血脂血糖）">
                 <label for="antibiotic">抗生素类</label>
-                <input type="checkbox" name="favcolor" id="antibiotic" value="70" class="menu"  data-name="麻醉类677">
+                <input type="checkbox" name="favcolor" id="antibiotic" value="4000" class="menu"  data-name="抗生素类">
                 <label for="anaesthesia">麻醉类</label>
-                <input type="checkbox" name="favcolor" id="anaesthesia" value="80" class="menu"  data-name="麻醉类8">
+                <input type="checkbox" name="favcolor" id="anaesthesia" value="4000" class="menu"  data-name="麻醉类">
             </fieldset>
             <!--<input type="submit" data-inline="true" value="提交">-->
         </form>
@@ -75,11 +75,12 @@
                     <textarea type="text" name="a" id="a" onkeyup="document.getElementById('b').value=this.value" onblur="document.getElementById('b').value=this.value"></textarea>
                 </div>
             </form>
+            </br>
             <hr>
 
             <form id="userInfo">
                 <div class="info">
-                    <p>被检测人信息</p>
+                    <h4>被检测人信息</h4>
                     <label>姓名：</label>
                     <input type="text" name="fullname" class="name">
 
@@ -103,11 +104,16 @@
                         <option value="kqlm">口腔黏膜</option>
                         <option value="qdx">脐带血</option>
                     </select>
-                    <label class="label-textarea">
+                    <div class="ui-btn-6m">
+                    <span class="red">&nbsp;*&nbsp;</span>
+                    邮寄地址：
+                    <span class="right"><input type="checkbox" class="addressInput"/>自定义邮寄地址</span>
+                    </div>
+                    <!--<label class="label-textarea">
                         <span class="red">&nbsp;*&nbsp;</span>
                         邮寄地址：
                         <span class="right"><input type="checkbox" class="addressInput"/>自定义邮寄地址</span>
-                    </label>
+                    </label>-->
                     <textarea type="text" name="textarea" class="address"></textarea>
                 </div>
 
